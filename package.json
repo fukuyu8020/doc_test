@@ -63,7 +63,8 @@
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -r https://github.com/fukuyu8020/doc_test.git -d public"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

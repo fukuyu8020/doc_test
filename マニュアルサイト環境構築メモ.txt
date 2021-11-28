@@ -1,0 +1,38 @@
+■準備
+・npm install -g gh-pages 
+　※管理者権限が必要
+
+■リポジトリ作成
+・githubのリポジトリを作成する（リポジトリ名は任意でよい）
+　→URL：https://アカウント名.github.io/リポジトリ名
+　　https://fukuyu8020.github.io/manual-test
+　※リポジトリ名は重要？
+
+・VSCodeを開き、git init →　git remote add XXX https://xxx でリモートを追加し、git pushでOK
+　※masterブランチに自動でpushされる
+
+■config.json
+siteUrl: 'https://fukuyu8020.github.io/doc_test',
+
+■package.json
+・"deploy": "gatsby build && gh-pages -r https://github.com/fukuyu8020/doc_test.git -d public"
+・npm run deloyで、gh-pagesブランチに出力される（あるいは -b で公開専用のブランチを指定すること）
+
+
+■手順
+※git commit/pushで一連の作業も自動化できたらよいが、とりあえず下記の手順
+＜ローカルで開発＞
+　・最初
+　　cd gatsby-gitbook-starter
+    gatsby develop
+　・VSCode上で開発
+    ※これでリアルタイムで変更が反映される（http://localhost:8000/）
+　　※データは/public/page-dataの中にjsonで格納する
+＜デプロイ＞
+　・手動でgit commit & push
+　・npm run deployコマンド実行
+
+
+■TODO
+・githubリポジトリ設計＆検証
+・jsonの中身を画面表示する

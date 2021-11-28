@@ -1,7 +1,7 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://fukuyu8020.github.io/doc_test',
     gaTrackingId: null,
     trailingSlash: false,
   },
@@ -60,7 +60,7 @@ const config = {
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Gatsby Gitbook Starter',
+      name: 'fukuyu8020',
       short_name: 'GitbookStarter',
       start_url: '/',
       background_color: '#6b37bf',
